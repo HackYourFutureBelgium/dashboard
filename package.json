@@ -2,6 +2,7 @@
   "name": "school-dashboard",
   "description": "A dashboard to manage (programming) schools that interact with GitHub.",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
