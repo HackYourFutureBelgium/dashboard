@@ -45,7 +45,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run prettify && yarn run lint:fix"
+      "pre-commit": "yarn run prettify --loglevel=silent && yarn run lint:fix"
     }
   }
 }
