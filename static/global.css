@@ -1,7 +1,29 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Rubik';
   font-weight: 400;
+  src: url('...');
   font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-weight: 400;
+  src: url('...');
+  font-display: swap;
+}
+
+:root {
+  --color-white: #fff;
+  --color-off-white: #F9F9F9;
+  --color-black: #333;
+  --color-dark-purple: #2F1D68;
+  --color-purple: #5524CB;
+  --color-orange: #E95F48;
+  --color-yellow: #FAE3A7;
+  --color-light-blue: #AFDEDF;
+  --color-pink:  #F9DDD2;
+  --fonts-copy: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --fonts-titles: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -12,10 +34,10 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: ${colors.white};
-  color: ${colors.copy};
+  background-color: var(--color-white);
+  color: var(--color-dark-purple);
   font-size: 1.6rem;
-  font-family: ${fonts.copy};
+  font-family: var(--fonts-copy);
 }
 
 *,
@@ -31,7 +53,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: ${fonts.titles};
+  font-family: var(--fonts-titles);
   font-weight: normal;
 }
 
@@ -51,5 +73,5 @@ a:hover {
 
 input,
 textarea {
-  font-family: ${fonts.copy};
+  font-family: var(--fonts-copy);
 }
